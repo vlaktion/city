@@ -10,6 +10,6 @@
         }
     ],
     "autoload": {
-        "psr-4": {"VLaktion\\": "src/"}
+        "psr-4": {"Vlaktion\\City\\": "src"}
     }
 }
