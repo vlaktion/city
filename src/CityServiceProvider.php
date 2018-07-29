@@ -13,7 +13,9 @@ class CityServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        include __DIR__.'/routes.php';
+        $this->publishes([
+            __DIR__.'/routes.php' => routes_path('city.php')
+        ], 'routes');
     }
 
     /**
@@ -23,6 +25,6 @@ class CityServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        include __DIR__.'/routes.php';
     }
 }

@@ -1,8 +1,8 @@
 {
     "name": "vlaktion/city",
     "description": "Laravel city package",
-    "license": "MIT",
-    "version": "1.0",
+    "minimum-stability": "dev",
+    "require": {},
     "authors": [
         {
             "name": "Vlad Laktionov",
@@ -11,5 +11,12 @@
     ],
     "autoload": {
         "psr-4": {"Vlaktion\\City\\": "src/"}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vlaktion\\City\\CityServiceProvider"
+            ]
+        }
     }
 }
